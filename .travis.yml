@@ -4,7 +4,7 @@ services:
 language: generic
 
 script:
-  - ./zazu-softpos/compile.sh
+  - make build
 
 after_success:
   - docker login -u $DOCKER_USER -p $DOCKER_PASS
