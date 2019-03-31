@@ -6,7 +6,6 @@ com/zazu/views/MostInterestingView$buttonListener.class
 com/zazu/views/SuccessfulTransactionDialog.class
 com/zazu/views/SoftPOSMain.class
 com/zazu/utils/ImportantObjectChecker.class
-com/zazu/config/EncryptionConfig.class
 com/zazu/views/NewTransactionPanel$9.class
 com/zazu/views/FindCustomerPanel$1.class
 com/zazu/views/LoginView.class
@@ -32,7 +31,6 @@ com/zazu/models/Customer.class
 com/zazu/views/LoginView$3.class
 com/zazu/views/MainView$5.class
 com/zazu/views/FindCustomerPanel$2.class
-com/zazu/utils/Hash.class
 com/zazu/views/UnsuccessfulTransactionDialog$1.class
 com/zazu/views/SuccessfulTransactionDialog$4.class
 com/zazu/views/MainView.class

@@ -20,7 +20,7 @@ public class EncryptionConfig {
 	
 	public static String PASSWORD_OUTTER_SALT = System.getenv("HASH_SALT_2");
 	
-	public static int ROUNDS = System.getenv("HASH_ROUNDS");
+	public static int ROUNDS = Integer.parseInt( System.getenv("HASH_ROUNDS")  );
 	
 	public static String INNER_ALGORITHM = System.getenv("HASH_ALGO_1");
 	
