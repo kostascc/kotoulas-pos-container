@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 LABEL MAINTAINER Konstantinos Chatzis <kachatzis@ece.auth.gr>
 
-EXPOSE 5901
+EXPOSE 5920
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV JAVA_HOME       /usr/lib/jvm/java-8-oracle
@@ -18,12 +18,18 @@ RUN apt-get update && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886 && \
     apt-get update && \
     apt-get install -y --no-install-recommends oracle-java8-installer oracle-java8-set-default && \
-    apt-get clean all && \
-    apt-get install -y vnc4server && \
-    echo $VNC_PASS >/tmp/file && \
-    echo $VNC_PASS >>/tmp/file && \
-    vncpasswd </tmp/file >/tmp/vncpasswd.1 2>/tmp/vncpasswd.2 && \
-    vncserver -geometry 800x600
+    apt-get clean all 
+#    apt-get install -y vnc4server && \
+#    echo $VNC_PASS >/tmp/file && \
+#    echo $VNC_PASS >>/tmp/file && \
+#    vncpasswd </tmp/file >/tmp/vncpasswd.1 2>/tmp/vncpasswd.2 && \
+#    vncserver -geometry 800x600
+
+#RUN apt-get install x11vnc
+
+
+#ENV DISPLAY :20
+
 
 # Define commonly used JAVA_HOME variable
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
