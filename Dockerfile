@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 LABEL MAINTAINER Konstantinos Chatzis <kachatzis@ece.auth.gr>
 
 EXPOSE 5901
