@@ -9,7 +9,7 @@ ENV LANG            en_US.UTF-8
 ENV LC_ALL          en_US.UTF-8
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends locales && \
+    apt-get install -y --no-install-recommends gnupg2 locales && \
     locale-gen en_US.UTF-8 && \
     apt-get dist-upgrade -y && \
     apt-get --purge remove openjdk* && \
